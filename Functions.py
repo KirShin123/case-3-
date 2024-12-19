@@ -19,7 +19,7 @@ def change_document_style(file_path):
         paragraph_format.line_spacing_rule = WD_LINE_SPACING.ONE_POINT_FIVE
 
     # Сохраняем документ под тем же именем
-    document.save(document_path)
+    document.save(file_path)
 
 
 
