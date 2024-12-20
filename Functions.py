@@ -21,4 +21,11 @@ def change_document_style(file_path):
     # Сохраняем документ под тем же именем
     document.save(file_path)
 
+# Дописал код
 
+def change_documents(directory_path):
+  # Перебираем все документы в папке
+  for file_path in directory_path.glob('*.docx'):
+      print(f"Обрабатываем файл {file_path.name}")
+      change_document_style(file_path)
+      print(f"Файл {file_path.name} обработан")
