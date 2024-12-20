@@ -12,4 +12,3 @@ files_to_process = [
 for file_path in files_to_process:
     print(f'Выводит текстовые файлы» {file_path}')
     change_document_style(file_path) 
-    

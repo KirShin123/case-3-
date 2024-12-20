@@ -22,10 +22,3 @@ def change_document_style(file_path):
     document.save(file_path)
 
 
-
-def change_documents(directory_path):
-  # Перебираем все документы в папке
-  for file_path in directory_path.glob('*.docx'):
-      print(f"Обрабатываем файл {file_path.name}")
-      change_document_style(file_path)
-      print(f"Файл {file_path.name} обработан")
